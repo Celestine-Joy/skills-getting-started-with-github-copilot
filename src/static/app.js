@@ -42,6 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
     description.textContent = activity.description;
     card.appendChild(description);
 
+    const schedule = document.createElement('p');
+    schedule.className = 'schedule';
+    schedule.textContent = `Schedule: ${activity.schedule}`;
+    card.appendChild(schedule);
+
     const participantsSection = document.createElement('div');
     participantsSection.className = 'participants';
 
